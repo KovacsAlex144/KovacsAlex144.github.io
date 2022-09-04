@@ -1,0 +1,26 @@
+﻿body {
+    background-color: #FFE4B5;
+    color: #000080;
+    border:1px
+}
+h1
+#sor1 {
+    text-align: center;
+    text-decoration:dashed;
+}
+#sor2 {
+    text-align: center;
+    width: 700px;
+
+}
+#sor2
+{
+   text-align:center;
+       width:700px;
+}
+#sor3{
+    text-align:left;
+}
+*{
+    color:navy;
+}

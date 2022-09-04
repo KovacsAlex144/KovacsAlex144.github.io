@@ -1,0 +1,13 @@
+﻿body
+{
+    background-color:red;
+}
+h1 {
+    color: #d8d843;
+    font-size: 40px;
+    font-family: Arial;
+    text-align:center;
+    font-style:oblique;
+        font-weight:bold;
+        font-stretch:extra-expanded;
+}

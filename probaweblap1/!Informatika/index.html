@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<script src="hull.js"></script>
+<link rel="stylesheet" type="text/css" href= "stilus.css">
+<script> //Javascript program ide fog kerülni
+	function szamolas() //Az eljárás elnevezése (a gomb kattintásakor ide ugrik a program)
+	{
+	var ev = document.korszamitas.szulev.value*1; //A weblapon(document),korszamitas elnevezésű form,szulev elnevezésű szöveges beviteli mező értéke(value) egyenlő az ev nevű változóval
+	document.korszamitas.kor.value = 2021-ev;     //A weblapon(document),korszamitas nevű form (űrlap),kor nevű értéke (kiírja) a 2019-ből kivont ev nevű változó értékét
+	}
+</script>
+
+	<meta charset=”utf-8”>
+<title>Nyílt nap 2021.</title>
+<link rel="icon" type="image/x-icon" href="kepek/favicon.ico"/>
+
+</head>
+<body>
+	<div id="egyes">	<!--Keret definiálása-->
+	<h1>Egyes keret</h1>	<!--h1= címsor1 -->
+	<hr> 	<!-- Vonal a weblapon-->
+	<h2>Mátészalkai Szakképzési Centrum Gépészeti Technikum és Kollégium</h2>
+<ul> <b>9. évfolyamon induló képzések </b><!--Listázás kezdete (nem számozott)-->
+	<li> Informatika és távközlés</li><!--Nem számozott listaelem( a számozottnak is ez)-->     
+	<li>Gépészet </li> <!-- Hivatkozás beszúrása: <a href=" a hivatkozás címe" > Hivatkozás szövege </a> <--lezárja a hivatkozást-->
+	<li>Gazdálkodás és menedzsment </li> 
+	<li>Közszolgálati technikus </li> 
+	<li>Egészségügy </li> 
+	</ul>
+	<!--h2= címsor2 -->
+</div>
+<div id="kettes">
+	<h1>Kettes keret</h1>	 <!--h1= címsor1 -->
+	<hr>	<!-- Vonal a weblapon-->
+</div>	<center>
+	<table>	<!-- A táblázat jelölése-->
+	<caption><h2>Mátészalkai Szakképzési Centrum Gépészeti Technikum és Kollégium</h2></caption>		<!--h2= címsor2 -->
+	<!-- A sorok (tr) és az oszlopok (td) meghatározása-->
+	<tr><td><h3>Informatika és távközlés</h3></td><td><img src="kepek/informatika.jfif"></td></tr>
+	<tr><td><h3>Gépészet<br></h3></td><td><img src="kepek/gépészet.jfif"></a></td></tr>
+	<tr><td><h3>Gazdálkodás és menedzsment</h3></td><td><img src="kepek/gazdálkodás.jfif"></td></tr>
+	<tr><td><h3>Közszolgálati technikus</h3></td><td><img src="kepek/rendész.jpg"></td></tr>
+	<tr><td><h3>Egészségügy</h3></td><td><img src="kepek/egészségügy.jfif"></td></tr>
+</table>
+</center>
+
+<div id="harmas">
+	<h1>Hármas keret</h1>		<!--h1= címsor1 -->
+	<hr>	<!--A keret végét jelző tag-->
+	<h2>Egy kis programozás - javascript segítségével</h2>	<!--h2= címsor2 -->
+</div>	<!--A keret végét jelző tag-->
+<form name="korszamitas"><!--Űrlapelemek elhelyezése és elnevezése, hogy tudjunk rá hivatkozni!-->
+	<font>Születési éved: </font><input type="text" name="szulev">  <!--Szöveges beviteli mező (elnevezve, hogy tudjunk rá hivatkozni)-->
+	<input type="button" value="Számol" onClick="szamolas()">  <!--A gomb felirattal és az eljárás neve,melyre hivatkozni fog-->
+	<font>Az életkorod: </font><input type="text" name="kor"><font> éves vagy :) </font><!--Szöveges beviteli mező (most adatmegjelenítésre használjuk)-->
+	<input  type="reset" value="Törlés"> <!--Törlő gomb, ha tévesztettünk vagy új számítást akarunk létrehozni (minden űrlapelem tartalmát törli)-->
+</form>
+
+<body>
+</html>
